@@ -2,7 +2,7 @@
 
 const path = require("path");
 
-const merge = require("webpack-merge").merge;
+const {merge} = require("webpack-merge");
 
 // plugins
 const HtmlWebpackPlugin = require("html-webpack-plugin");
