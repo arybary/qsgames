@@ -1,6 +1,6 @@
 import { Spine } from "pixi-spine";
 import { Application, Loader, Texture, Container, Sprite, TextStyle, Text, AnimatedSprite } from "pixi.js";
-import getEnemy from "./enemy"
+import getEnemy from "./enemy";
 import "./style.css";
 
 const gameWidth = 512;
@@ -55,7 +55,7 @@ const killEnemy = (x: number, y: number): AnimatedSprite => {
 
 function getGameScene(): Container {
     const gameScene = new Container();
-
+    const timerStart = new Date();
     const bg = new Sprite(Texture.from("background.png"));
     bg.anchor.set(0, 0);
     gameScene.addChild(bg);
@@ -80,7 +80,11 @@ function getGameScene(): Container {
     score.y = -score.height / 2 - 1;
     scoreBar.addChild(score);
 
-    function handlerClick(enemy: Container) {
+    function handlerClick(enemy: Spine) {
+        if (valueScore === 1) {
+            alert("Game END");
+            location.reload();
+        }
         valueScore -= 1;
         score.text = valueScore;
         score.x = -score.width / 2;

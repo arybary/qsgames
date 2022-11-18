@@ -1,7 +1,7 @@
 import { Spine } from "pixi-spine";
-import { Container, Loader } from "pixi.js";
+import { Loader } from "pixi.js";
 
-const getEnemy = (x: number, y: number): Container => {
+const getEnemy = (x: number, y: number): Spine => {
     if (!Loader.shared.resources.enemy.spineData) {
         throw new Error("Pixie spine is not loaded");
     }
