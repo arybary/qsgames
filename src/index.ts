@@ -101,7 +101,7 @@ function getGameScene(): Container {
         const enemy = getEnemy(x, y);
 
         gameScene.addChild(enemy);
-        enemy.on("click", () => handlerClick(enemy));
+        enemy.on("pointerdown", () => handlerClick(enemy));
     });
 
     return gameScene;
