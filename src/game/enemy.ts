@@ -1,7 +1,7 @@
 import { Spine } from "pixi-spine";
 import { AnimatedSprite, Loader, LoaderResource, Texture } from "pixi.js";
 
-export const getEnemy = (x: number, y: number, loader: LoaderResource, animateName: string, size: number): Spine => {
+export const getEnemy = (x: number, y: number, loader: LoaderResource, size: number): Spine => {
     if (!loader.spineData) {
         throw new Error("Enemy spine is not loaded");
     }
@@ -9,7 +9,8 @@ export const getEnemy = (x: number, y: number, loader: LoaderResource, animateNa
     const enemy = new Spine(loader.spineData);
     enemy.scale.set(size);
     enemy.position.set(x, y);
-    enemy.state.setAnimation(0, animateName, true);
+    const {name}=loader.spineData.animations[0]
+    enemy.state.setAnimation(0, name, true);
     enemy.interactive = true;
     enemy.buttonMode = true;
     return enemy;
