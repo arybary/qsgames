@@ -1,8 +1,11 @@
-canvas {
+body {
     overflow: hidden;
+}
+
+canvas {
     margin: 0 auto;
     background-color: black;
-    display:flex;
+    display: flex;
     height: 100vh;
     width: 100vw;
 }
