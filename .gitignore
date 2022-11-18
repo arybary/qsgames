@@ -3,4 +3,4 @@ coverage
 dist/*
 .cache
 .env
-./package-lock
+package-lock.json
