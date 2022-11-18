@@ -7,6 +7,62 @@
             "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
             "sourceSize": { "w": 240, "h": 240 }
         },
+        "Explosion_Sequence_A 2.png": {
+            "frame": { "x": 728, "y": 1212, "w": 240, "h": 240 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
+            "sourceSize": { "w": 240, "h": 240 }
+        },
+        "Explosion_Sequence_A 3.png": {
+            "frame": { "x": 486, "y": 1212, "w": 240, "h": 240 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
+            "sourceSize": { "w": 240, "h": 240 }
+        },
+        "Explosion_Sequence_A 4.png": {
+            "frame": { "x": 244, "y": 1212, "w": 240, "h": 240 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
+            "sourceSize": { "w": 240, "h": 240 }
+        },
+        "Explosion_Sequence_A 5.png": {
+            "frame": { "x": 2, "y": 1696, "w": 240, "h": 240 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
+            "sourceSize": { "w": 240, "h": 240 }
+        },
+        "Explosion_Sequence_A 6.png": {
+            "frame": { "x": 2, "y": 1454, "w": 240, "h": 240 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
+            "sourceSize": { "w": 240, "h": 240 }
+        },
+        "Explosion_Sequence_A 7.png": {
+            "frame": { "x": 2, "y": 1212, "w": 240, "h": 240 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
+            "sourceSize": { "w": 240, "h": 240 }
+        },
+        "Explosion_Sequence_A 8.png": {
+            "frame": { "x": 728, "y": 970, "w": 240, "h": 240 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
+            "sourceSize": { "w": 240, "h": 240 }
+        },
+        "Explosion_Sequence_A 9.png": {
+            "frame": { "x": 486, "y": 970, "w": 240, "h": 240 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
+            "sourceSize": { "w": 240, "h": 240 }
+        },
         "Explosion_Sequence_A 10.png": {
             "frame": { "x": 244, "y": 970, "w": 240, "h": 240 },
             "rotated": false,
@@ -77,13 +133,7 @@
             "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
             "sourceSize": { "w": 240, "h": 240 }
         },
-        "Explosion_Sequence_A 2.png": {
-            "frame": { "x": 728, "y": 1212, "w": 240, "h": 240 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
-            "sourceSize": { "w": 240, "h": 240 }
-        },
+
         "Explosion_Sequence_A 20.png": {
             "frame": { "x": 728, "y": 244, "w": 240, "h": 240 },
             "rotated": false,
@@ -135,55 +185,6 @@
         },
         "Explosion_Sequence_A 27.png": {
             "frame": { "x": 2, "y": 2, "w": 240, "h": 240 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
-            "sourceSize": { "w": 240, "h": 240 }
-        },
-        "Explosion_Sequence_A 3.png": {
-            "frame": { "x": 486, "y": 1212, "w": 240, "h": 240 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
-            "sourceSize": { "w": 240, "h": 240 }
-        },
-        "Explosion_Sequence_A 4.png": {
-            "frame": { "x": 244, "y": 1212, "w": 240, "h": 240 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
-            "sourceSize": { "w": 240, "h": 240 }
-        },
-        "Explosion_Sequence_A 5.png": {
-            "frame": { "x": 2, "y": 1696, "w": 240, "h": 240 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
-            "sourceSize": { "w": 240, "h": 240 }
-        },
-        "Explosion_Sequence_A 6.png": {
-            "frame": { "x": 2, "y": 1454, "w": 240, "h": 240 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
-            "sourceSize": { "w": 240, "h": 240 }
-        },
-        "Explosion_Sequence_A 7.png": {
-            "frame": { "x": 2, "y": 1212, "w": 240, "h": 240 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
-            "sourceSize": { "w": 240, "h": 240 }
-        },
-        "Explosion_Sequence_A 8.png": {
-            "frame": { "x": 728, "y": 970, "w": 240, "h": 240 },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },
-            "sourceSize": { "w": 240, "h": 240 }
-        },
-        "Explosion_Sequence_A 9.png": {
-            "frame": { "x": 486, "y": 970, "w": 240, "h": 240 },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": { "x": 0, "y": 0, "w": 240, "h": 240 },

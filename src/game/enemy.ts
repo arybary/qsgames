@@ -16,13 +16,10 @@ export const getEnemy = (x: number, y: number): Spine => {
 };
 
 export const killEnemy = (x: number, y: number): AnimatedSprite => {
-    const explosionTextures = [];
+    const killNameTextures = Object.keys(Loader.shared.resources.kill.data.frames);
+    const killTextures = killNameTextures.map((texture) => Texture.from(texture));
 
-    for (let i = 0; i < 26; i += 1) {
-        const texture = Texture.from(`Explosion_Sequence_A ${i + 1}.png`);
-        explosionTextures.push(texture);
-    }
-    const enemyKill = new AnimatedSprite(explosionTextures);
+    const enemyKill = new AnimatedSprite(killTextures);
     enemyKill.x = x;
     enemyKill.y = y;
     enemyKill.loop = false;
