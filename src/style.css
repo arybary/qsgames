@@ -1,5 +1,10 @@
 body {
-    overflow: hidden;
-    margin: 0 auto;
-    background-color: black;
+    margin: 0px;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

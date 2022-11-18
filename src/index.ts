@@ -55,7 +55,6 @@ const killEnemy = (x: number, y: number): AnimatedSprite => {
 
 function getGameScene(): Container {
     const gameScene = new Container();
-    const timerStart = new Date();
     const bg = new Sprite(Texture.from("background.png"));
     bg.anchor.set(0, 0);
     gameScene.addChild(bg);
@@ -82,7 +81,7 @@ function getGameScene(): Container {
 
     function handlerClick(enemy: Spine) {
         if (valueScore === 1) {
-            alert("Game END");
+            alert(`Game END`);
             location.reload();
         }
         valueScore -= 1;
@@ -126,9 +125,9 @@ window.onload = async (): Promise<void> => {
 
     resizeCanvas();
 
-    const birdFromSprite = getGameScene();
+    const gamesScene = getGameScene();
 
-    app.stage.addChild(birdFromSprite);
+    app.stage.addChild(gamesScene);
 
     app.stage.interactive = true;
 };
