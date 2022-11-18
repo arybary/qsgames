@@ -39,11 +39,14 @@ export function getGameScene(): Container {
         }
     };
 
-    enemiesPositions.forEach((pos: { x: number; y: number }) => {
-        const { x, y } = pos;
+    enemiesPositions.forEach((pos: { x: number; y: number; id: number }) => {
+        const { x, y, id } = pos;
+        const loaderDragon = Loader.shared.resources.dragon;
+        const loaderAxie = Loader.shared.resources.axie;
 
-        const enemy = getEnemy(x, y);
-
+        const enemy = !(id % 3)
+            ? getEnemy(x, y, loaderAxie, "action/appear", 0.05)
+            : getEnemy(x, y, loaderDragon, "flying", 0.1);
         gameScene.addChild(enemy);
 
         enemy.on("pointerdown", () => handlerClickKillEnemy(enemy));

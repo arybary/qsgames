@@ -1,18 +1,18 @@
 import { Spine } from "pixi-spine";
-import { AnimatedSprite, Loader, Texture } from "pixi.js";
+import { AnimatedSprite, Loader, LoaderResource, Texture } from "pixi.js";
 
-export const getEnemy = (x: number, y: number): Spine => {
-    if (!Loader.shared.resources.enemy.spineData) {
+export const getEnemy = (x: number, y: number, loader: LoaderResource, animateName: string, size: number): Spine => {
+    if (!loader.spineData) {
         throw new Error("Enemy spine is not loaded");
     }
 
-    const dragon = new Spine(Loader.shared.resources.enemy.spineData);
-    dragon.scale.set(0.1);
-    dragon.position.set(x, y);
-    dragon.state.setAnimation(0, "flying", true);
-    dragon.interactive = true;
-    dragon.buttonMode = true;
-    return dragon;
+    const enemy = new Spine(loader.spineData);
+    enemy.scale.set(size);
+    enemy.position.set(x, y);
+    enemy.state.setAnimation(0, animateName, true);
+    enemy.interactive = true;
+    enemy.buttonMode = true;
+    return enemy;
 };
 
 export const killEnemy = (x: number, y: number): AnimatedSprite => {

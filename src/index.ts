@@ -16,7 +16,8 @@ async function loadGameAssets(): Promise<void> {
     return new Promise((res, rej) => {
         const loader = Loader.shared;
         loader.add("scene", "./assets/scene.json");
-        loader.add("enemy", "./assets/enemy/dragon.json");
+        loader.add("dragon", "./assets/enemy/dragon.json");
+        loader.add("axie", "./assets/enemy/axie.json");
         loader.add("positions", "./assets/positions.json");
         loader.add("kill", "./assets/killEnemy/mc.json");
 

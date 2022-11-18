@@ -1,139 +1,132 @@
 
 axie.png
-size: 2049,434
+size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-mouth-eat
+back
   rotate: false
-  xy: 1393, 114
-  size: 157, 53
-  orig: 157, 53
-  offset: 0, 0
-  index: -1
-leg-back-left
-  rotate: false
-  xy: 1195, 102
-  size: 70, 70
-  orig: 70, 70
-  offset: 0, 0
-  index: -1
-eyes-angry
-  rotate: false
-  xy: 1047, 2
-  size: 238, 98
-  orig: 238, 98
-  offset: 0, 0
-  index: -1
-eyes-shut
-  rotate: false
-  xy: 1527, 2
-  size: 240, 110
-  orig: 240, 110
-  offset: 0, 0
-  index: -1
-mouth
-  rotate: false
-  xy: 1993, 2
-  size: 54, 12
-  orig: 54, 12
-  offset: 0, 0
-  index: -1
-leg-front-right
-  rotate: false
-  xy: 1047, 102
-  size: 74, 88
-  orig: 74, 88
-  offset: 0, 0
-  index: -1
-mouth-open
-  rotate: false
-  xy: 839, 114
-  size: 90, 108
-  orig: 90, 108
-  offset: 0, 0
-  index: -1
-tail
-  rotate: false
-  xy: 1267, 169
-  size: 272, 188
-  orig: 272, 188
-  offset: 0, 0
-  index: -1
-shadow
-  rotate: false
-  xy: 1552, 138
-  size: 286, 154
-  orig: 286, 154
-  offset: 0, 0
-  index: -1
-leg-back-right
-  rotate: false
-  xy: 953, 108
-  size: 74, 88
-  orig: 74, 88
+  xy: 677, 475
+  size: 148, 144
+  orig: 148, 144
   offset: 0, 0
   index: -1
 body
   rotate: false
-  xy: 261, 2
-  size: 576, 430
-  orig: 576, 430
+  xy: 40, 480
+  size: 597, 461
+  orig: 597, 461
   offset: 0, 0
   index: -1
-mouth-bite
-  rotate: false
-  xy: 1267, 114
-  size: 124, 32
-  orig: 124, 32
+ear-left
+  rotate: true
+  xy: 366, 220
+  size: 84, 100
+  orig: 84, 100
   offset: 0, 0
   index: -1
-leg-front-left
-  rotate: false
-  xy: 1123, 102
-  size: 70, 72
-  orig: 70, 72
-  offset: 0, 0
-  index: -1
-body-pattern
-  rotate: false
-  xy: 196, 2
-  size: 63, 99
-  orig: 63, 99
-  offset: 0, 0
-  index: -1
-back
-  rotate: false
-  xy: 2, 2
-  size: 192, 186
-  orig: 192, 186
-  offset: 0, 0
-  index: -1
-horn
-  rotate: false
-  xy: 1769, 2
-  size: 222, 134
-  orig: 222, 134
+ear-right
+  rotate: true
+  xy: 506, 230
+  size: 74, 92
+  orig: 74, 92
   offset: 0, 0
   index: -1
 eyes
   rotate: false
-  xy: 1287, 2
-  size: 238, 110
-  orig: 238, 110
+  xy: 40, 150
+  size: 262, 96
+  orig: 262, 96
   offset: 0, 0
   index: -1
-ear-right
+eyes-angry
   rotate: false
-  xy: 953, 2
-  size: 92, 104
-  orig: 92, 104
+  xy: 677, 831
+  size: 282, 110
+  orig: 282, 110
   offset: 0, 0
   index: -1
-ear-left
+eyes-shut
   rotate: false
-  xy: 839, 2
-  size: 112, 110
-  orig: 112, 110
+  xy: 366, 344
+  size: 262, 96
+  orig: 262, 96
+  offset: 0, 0
+  index: -1
+horn
+  rotate: false
+  xy: 677, 659
+  size: 204, 132
+  orig: 204, 132
+  offset: 0, 0
+  index: -1
+leg-back-left
+  rotate: false
+  xy: 237, 40
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+leg-back-right
+  rotate: true
+  xy: 638, 205
+  size: 74, 88
+  orig: 74, 88
+  offset: 0, 0
+  index: -1
+leg-front-right
+  rotate: true
+  xy: 638, 205
+  size: 74, 88
+  orig: 74, 88
+  offset: 0, 0
+  index: -1
+leg-front-left
+  rotate: false
+  xy: 865, 547
+  size: 70, 72
+  orig: 70, 72
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: true
+  xy: 865, 467
+  size: 40, 72
+  orig: 40, 72
+  offset: 0, 0
+  index: -1
+mouth-bite
+  rotate: false
+  xy: 766, 197
+  size: 78, 82
+  orig: 78, 82
+  offset: 0, 0
+  index: -1
+mouth-eat
+  rotate: false
+  xy: 40, 57
+  size: 157, 53
+  orig: 157, 53
+  offset: 0, 0
+  index: -1
+mouth-open
+  rotate: false
+  xy: 921, 661
+  size: 50, 130
+  orig: 50, 130
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 40, 286
+  size: 286, 154
+  orig: 286, 154
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 668, 319
+  size: 144, 116
+  orig: 144, 116
   offset: 0, 0
   index: -1
