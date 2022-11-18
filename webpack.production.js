@@ -10,7 +10,8 @@ const ESLintPlugin = require("eslint-webpack-plugin");
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "package.json"), "utf-8"));
 
-module.exports = (env) => ({
+module.exports = (env) => {
+    return {
         mode: env.mode,
 
         module: {
@@ -70,4 +71,5 @@ module.exports = (env) => ({
 
             new webpack.ProgressPlugin(),
         ],
-    });
+    };
+};
