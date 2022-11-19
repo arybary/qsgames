@@ -43,7 +43,7 @@ export function getGameScene(): Container {
     enemiesPositions.forEach((pos: { x: number; y: number; name: string }) => {
         const { x, y, name } = pos;
         const loaderEnemy = Loader.shared.resources[name];
-        const enemy = getEnemy(x, y, loaderEnemy, 0.08);
+        const enemy = getEnemy(x, y, loaderEnemy, 0.1);
         gameScene.addChild(enemy);
 
         enemy.on("pointerdown", () => handlerClickKillEnemy(enemy));
