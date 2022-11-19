@@ -46,6 +46,7 @@ function resizeCanvas(): void {
 }
 
 window.onload = async (): Promise<void> => {
+    document.title = "Test QS games";
     await loadGameAssets();
 
     document.body.appendChild(app.view);
