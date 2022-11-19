@@ -7,12 +7,15 @@ export const getEnemy = (x: number, y: number, loader: LoaderResource, size: num
     }
 
     const enemy = new Spine(loader.spineData);
+
+    const { name } = loader.spineData.animations[0];
+    enemy.state.setAnimation(0, name, true);
+
     enemy.scale.set(size);
     enemy.position.set(x, y);
-    const {name}=loader.spineData.animations[0]
-    enemy.state.setAnimation(0, name, true);
     enemy.interactive = true;
     enemy.buttonMode = true;
+
     return enemy;
 };
 
@@ -21,11 +24,12 @@ export const killEnemy = (x: number, y: number): AnimatedSprite => {
     const killTextures = killNameTextures.map((texture) => Texture.from(texture));
 
     const enemyKill = new AnimatedSprite(killTextures);
-    enemyKill.x = x;
-    enemyKill.y = y;
+
+    enemyKill.scale.set(0.3);
+    enemyKill.position.set(x, y);
     enemyKill.loop = false;
-    enemyKill.animationSpeed = 0.2;
+    enemyKill.animationSpeed = 0.25;
     enemyKill.play();
-    enemyKill.scale.set(0.5);
+    
     return enemyKill;
 };

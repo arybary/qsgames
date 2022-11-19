@@ -49,7 +49,7 @@ window.onload = async (): Promise<void> => {
     await loadGameAssets();
 
     document.body.appendChild(app.view);
-    
+
     resizeCanvas();
 
     const gameScene = getGameScene();
