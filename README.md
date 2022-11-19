@@ -2,7 +2,7 @@
 
 ## [pixi](https://pixijs.com/)-[typescript](https://www.typescriptlang.org/)-[webpack](https://webpack.js.org/)
 
-# [Test QuartSoft test](https://monumental-fenglisu-6be940.netlify.app/)
+# [Test QuartSoft games](https://monumental-fenglisu-6be940.netlify.app/)
 
 ## Highlights
 
