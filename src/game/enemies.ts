@@ -35,7 +35,7 @@ export const getEnemies = () => {
         const enemyForGame = new Container();
         enemyForGame.position.set(x, y);
         const loaderAssetEnemy = loaderAssets[name];
-        const enemy = getEnemySpine(loaderAssetEnemy, 0.1);
+        const enemy = getEnemySpine(loaderAssetEnemy, 0.12);
 
         enemyForGame.addChild(enemy);
 
