@@ -13,6 +13,7 @@ export const getEnemySpine = (enemyLoader: LoaderResource, size: number): Spine 
     enemy.scale.set(size);
     enemy.interactive = true;
     enemy.buttonMode = true;
+    enemy.cursor= "url(/assets/cursor.png), pointer";
     return enemy;
 };
 
