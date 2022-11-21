@@ -33,25 +33,11 @@ async function loadGameAssets(): Promise<void> {
     });
 }
 
-function resizeCanvas(): void {
-    const resize = () => {
-        app.renderer.resize(window.innerWidth, window.innerHeight);
-        app.stage.scale.x = window.innerWidth / gameWidth;
-        app.stage.scale.y = window.innerHeight / gameHeight;
-    };
-
-    resize();
-
-    window.addEventListener("resize", resize);
-}
-
 window.onload = async (): Promise<void> => {
     document.title = "Test QS games";
     await loadGameAssets();
 
     document.body.appendChild(app.view);
-
-    resizeCanvas();
 
     const gameScene = getGameScene();
     app.stage.addChild(gameScene);
