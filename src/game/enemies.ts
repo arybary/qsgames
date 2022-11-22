@@ -1,4 +1,5 @@
-import { Container, Loader, Text } from "pixi.js";
+import { Spine } from "pixi-spine";
+import { AnimatedSprite, Container, Loader, Text } from "pixi.js";
 import { getEnemySpine, getKillAnimeted } from "./enemy";
 import { getScore } from "./score";
 
@@ -13,7 +14,7 @@ export const getEnemies = (): EnemiesData => {
     const enemiesPositions = loaderAssets.positions.data;
 
     let enemiesAmount = enemiesPositions.length;
-    const scoreEnemies = getScore(enemiesAmount);
+    const scoreEnemies = getScore(enemiesAmount) as Text;
 
     const handlerClickKillEnemy = (enemyForGame: Container) => {
         enemiesAmount -= 1;
@@ -22,7 +23,7 @@ export const getEnemies = (): EnemiesData => {
         enemyForGame.removeChildren();
 
         const killLoader = loaderAssets.kill;
-        const killEnemyAnimated = getKillAnimeted(killLoader, 0.4);
+        const killEnemyAnimated = getKillAnimeted(killLoader, 0.4) as AnimatedSprite;
         const xPos = enemyForGame.width / 2 - killEnemyAnimated.width / 2;
         const yPos = enemyForGame.height / 2 - killEnemyAnimated.height / 2;
 
@@ -40,7 +41,7 @@ export const getEnemies = (): EnemiesData => {
         const enemyForGame = new Container();
         enemyForGame.position.set(x, y);
         const loaderAssetEnemy = loaderAssets[name];
-        const enemy = getEnemySpine(loaderAssetEnemy, 0.12);
+        const enemy = getEnemySpine(loaderAssetEnemy, 0.12) as Spine;
 
         enemyForGame.addChild(enemy);
 
