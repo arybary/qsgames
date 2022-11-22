@@ -1,8 +1,8 @@
 import { Container, Sprite, Texture } from "pixi.js";
-import { getEnemies } from "./enemies";
+import { EnemiesData, getEnemies } from "./enemies";
 
 export function getGameScene(): Container {
-    const { enemies, scoreEnemies } = getEnemies();
+    const { enemies, scoreEnemies } = getEnemies() as EnemiesData;
 
     const gameScene = new Container();
     const bg = new Sprite(Texture.from("background.png"));

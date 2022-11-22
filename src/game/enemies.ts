@@ -1,8 +1,13 @@
-import { Container, Loader } from "pixi.js";
+import { Container, Loader, Text } from "pixi.js";
 import { getEnemySpine, getKillAnimeted } from "./enemy";
 import { getScore } from "./score";
 
-export const getEnemies = () => {
+export interface EnemiesData {
+    enemies: Container[];
+    scoreEnemies: Text;
+}
+
+export const getEnemies = (): EnemiesData => {
     const loaderAssets = Loader.shared.resources;
 
     const enemiesPositions = loaderAssets.positions.data;
