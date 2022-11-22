@@ -1,6 +1,6 @@
 import { TextStyle, Text } from "pixi.js";
 
-export const getScore = (amount: number) => {
+export const getScore = (amount: number): Text => {
     const style = new TextStyle({
         fontFamily: "Arial",
         fontSize: 28,
