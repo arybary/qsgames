@@ -2,7 +2,7 @@
 
 ## [pixi](https://pixijs.com/)-[typescript](https://www.typescriptlang.org/)-[webpack](https://webpack.js.org/)
 
-# [Test QuartSoft games](https://venerable-souffle-03d5d5.netlify.app/)
+# [Dragon kill](https://venerable-souffle-03d5d5.netlify.app/)
 
 ## Commands:
 
